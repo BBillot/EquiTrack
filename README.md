@@ -20,6 +20,7 @@ corresponding point clouds, which are registered in close form.
 ![Generation examples](data/figures/overview.png)
 
 <br />
+<br />
 
 Overall, ENERGI outperforms classical optimisation-based ([ANTs](https://github.com/ANTsX/ANTs)<sup>1</sup>) and 
 learning-based strategies ([KeyMorph](https://github.com/alanqrwang/keymorph)<sup>2</sup>) for rigid motion tracking
