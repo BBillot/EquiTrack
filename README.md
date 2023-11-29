@@ -1,5 +1,4 @@
-# ENERGI
-## Equivariant NEtwork for Rigid reGIstration
+# ENERGI (Equivariant NEtwork for Rigid reGIstration)
 
 In this repository, we present ENERGI, the first method to use recently proposed SE(3)-equivariant group-CNNs (G-CNN)
 for rigid motion tracking in 3D medical images. Here we use a hybrid architecture that combines a denoising CNN with a
@@ -16,16 +15,19 @@ unknown transform.
 3. This rigid transform is estimated by collapsing the feature maps onto their centers of mass, providing us with two
 corresponding point clouds, which are registered in close form.
 
-\
+<br />
+
 ![Generation examples](data/figures/overview.png)
 
 Overall, ENERGI outperforms classical optimisation-based ([ANTs](https://github.com/ANTsX/ANTs)<sup>1</sup>) and 
 learning-based strategies ([KeyMorph](https://github.com/alanqrwang/keymorph)<sup>2</sup>) for rigid motion tracking
 (see figure below for brain motion tracking in a fetal time series).
 
-\
+<br />
+
 ![Generation examples](data/figures/example.png)
 
+<br />
 
 ---
 ### Installation
@@ -38,6 +40,8 @@ That's it ! You're now ready to use ENERGI ! :tada:
 
 Note: Our code also relies on the [se3cnn](https://github.com/mariogeiger/se3cnn) repository (based on the work 
 of Weiler et al.<sup>3</sup>), that we include here for convenience.
+
+<br />
 
 ---
 ### Train and test your own model
@@ -59,6 +63,8 @@ model for prediction of rigid transforms between pairs of fixed and moving volum
 - [5-predict_time_series.py](scripts/5-predict_time_series.py) enables to perform rigid motion tracking in input 
 time-series. This is a modified version of script 4 to register all time frames to the first one of the time series.
 
+<br />
+
 ---
 ### Citation/Contact
 
@@ -72,6 +78,8 @@ Billot, Moyer, Hoffmann, Abaci Turk, Gagoski, Grant, Golland \
 If you have any question regarding the usage of this code, or any suggestions to improve it, please raise an issue
 (preferred) or contact us at: bbillot@mit.edu
 
+
+<br />
 
 ---
 ### References
