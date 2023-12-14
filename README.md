@@ -1,17 +1,17 @@
 # EquiTrack
 
-In this repository, we present EquiTrack, the first method to use recently proposed SE(3)-equivariant group-CNNs 
-(G-CNN) for rigid motion tracking in 3D medical images. Here we use a hybrid architecture that combines a 
-denoising CNN with a G-CNN to decouple the processing of intensity and spatial features. 
+In this repository, we present EquiTrack, the first method to use recently proposed steerable SE(3)-equivariant 
+group-CNNs (G-CNN) for rigid motion tracking in 3D medical images. Here we use a hybrid architecture that 
+combines a denoising CNN with a G-CNN to decouple the processing of intensity and spatial features. 
 
 Specifically, our framework has three parts (see figure below):
 
 1. A denoiser first removes anatomically irrelevant features (i.e., noise) from the two images to rigidly register.
 Effectively, the denoiser maps both inputs to a common noise-free intensity distribution, where the inputs only differ 
 by the pose of the represented object. 
-2. We then extract expressive features with a G-CNN. Crucially, these features are *equivariant* (i.e., they shift and 
-rotate accordingly to the pose of the object), such that we extract the *same* features for both 3D images, up to the 
-unknown transform.
+2. We then extract expressive features with a steerable G-CNN. Crucially, these features are *equivariant* (i.e.,
+they shift and rotate accordingly to the pose of the object), such that we extract the *same* features for both
+3D images, up to the unknown transform.
 3. This rigid transform is estimated by collapsing the feature maps onto their centers of mass, providing us with two
 corresponding point clouds, which are registered in close form.
 
