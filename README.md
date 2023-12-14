@@ -1,8 +1,8 @@
-# ENERGI (Equivariant NEtwork for Rigid reGIstration)
+# EquiTrack
 
-In this repository, we present ENERGI, the first method to use recently proposed SE(3)-equivariant group-CNNs (G-CNN)
-for rigid motion tracking in 3D medical images. Here we use a hybrid architecture that combines a denoising CNN with a
-G-CNN to decouple the processing of intensity and spatial features. 
+In this repository, we present EquiTrack, the first method to use recently proposed SE(3)-equivariant group-CNNs 
+(G-CNN) for rigid motion tracking in 3D medical images. Here we use a hybrid architecture that combines a 
+denoising CNN with a G-CNN to decouple the processing of intensity and spatial features. 
 
 Specifically, our framework has three parts (see figure below):
 
@@ -22,7 +22,7 @@ corresponding point clouds, which are registered in close form.
 <br />
 <br />
 
-Overall, ENERGI outperforms classical optimisation-based ([ANTs](https://github.com/ANTsX/ANTs)<sup>1</sup>) and 
+Overall, EquiTrack outperforms classical optimisation-based ([ANTs](https://github.com/ANTsX/ANTs)<sup>1</sup>) and 
 learning-based strategies ([KeyMorph](https://github.com/alanqrwang/keymorph)<sup>2</sup>) for rigid motion tracking
 (see figure below for brain motion tracking in a fetal time series).
 
@@ -39,7 +39,7 @@ learning-based strategies ([KeyMorph](https://github.com/alanqrwang/keymorph)<su
 2. Get python 3.8.
 3. Install all the [required libraries](requirements.txt).
 
-That's it ! You're now ready to use ENERGI ! :tada:
+That's it ! You're now ready to use EquiTrack ! :tada:
 
 Note: Our code also relies on the [se3cnn](https://github.com/mariogeiger/se3cnn) repository (based on the work 
 of Weiler et al.<sup>3</sup>), that we include here for convenience.
