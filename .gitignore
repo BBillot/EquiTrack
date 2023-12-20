@@ -2,6 +2,6 @@
 venv/
 **/__pycache__/
 
-energi/predict_time_series_old.py
+equitrack/predict_time_series_old.py
 
 scripts/*mine.py

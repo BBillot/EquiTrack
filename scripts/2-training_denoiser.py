@@ -9,7 +9,7 @@ Here the denoiser is simply trained by removing simulated noise from real images
 the native image and the denoised version.
 """
 
-from energi.training_denoiser import training
+from equitrack.training_denoiser import training
 
 # inputs/outputs (Images need to be in nifty format.)
 training_im_dir = '/data/training/images'  # training images

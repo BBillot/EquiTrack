@@ -5,8 +5,8 @@ import numpy as np
 import torch.utils.data
 import numpy.random as npr
 
-from energi.utils import preprocess
-from energi.augmenters import SpatialAugmenter, IntensityAugmenter
+from equitrack.utils import preprocess
+from equitrack.augmenters import SpatialAugmenter, IntensityAugmenter
 
 
 class loader_rxfm(torch.utils.data.IterableDataset):

@@ -1,7 +1,7 @@
 import torch
 import numpy as np
 from torch import nn
-from energi.utils import add_axis
+from equitrack.utils import add_axis
 
 
 class SpatialMeans(nn.Module):

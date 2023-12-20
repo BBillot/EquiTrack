@@ -3,10 +3,10 @@ import numpy as np
 import torch.utils.data
 from pytorch3d.transforms import matrix_to_euler_angles as matrix_to_angles
 
-from energi import loaders
-from energi import networks
-import energi.losses as losses
-from energi.utils import build_subject_dict_series, build_xfm_dict_series, aff_to_field, interpolate, save_volume
+from equitrack import loaders
+from equitrack import networks
+import equitrack.losses as losses
+from equitrack.utils import build_subject_dict_series, build_xfm_dict_series, aff_to_field, interpolate, save_volume
 
 # set up cuda and device
 torch.backends.cudnn.benchmark = True
@@ -70,7 +70,7 @@ def predict(path_main_model,
     Note that the name_label_dir and name_xfm_dir are optional, and are used to compute test scores if provided.
 
     Results for each time-series are written in their individual directory as follows
-    time_series_1/energi/predicted_transforms/predicted_transforms_4x4_matrix/*.npy: - rigid transform in 4x4
+    time_series_1/equitrack/predicted_transforms/predicted_transforms_4x4_matrix/*.npy: - rigid transform in 4x4
                                                                                        homogeneous matrices between
                                                                                        each frame and the first one
                                              /predicted_rotation_angles.npy:         - summary of the predicted angles
@@ -135,7 +135,7 @@ def predict(path_main_model,
     for time_series in list_time_series:
         series_dir = os.path.join(main_data_dir, time_series)
 
-        results_dir = os.path.join(series_dir, 'energi')
+        results_dir = os.path.join(series_dir, 'equitrack')
 
         # create result directory
         os.makedirs(results_dir, exist_ok=True)

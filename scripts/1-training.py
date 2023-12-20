@@ -13,7 +13,7 @@ Furthermore, the two training inputs can be separately augmented with different 
 All parameters below are explained in details. None of the paths provided here exist, it's just an example :)
 """
 
-from energi.training import training
+from equitrack.training import training
 
 # INPUTS
 # the training script doesn't assume any particular structure in the data organisation. Yet, it needs two mandatory

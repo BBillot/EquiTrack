@@ -3,7 +3,7 @@ It uses the feature extractor and the rigid transform estimator, possibly with a
 Ground truth transforms can also be provided to compute angle and shift errors in the predicted transforms.
 """
 
-from energi.predict import predict
+from equitrack.predict import predict
 
 # INPUTS (Images need to be in nifty format.)
 path_main_model = '/data/results_training_rigid_registration/best_val_loss.pth'  # path of the rigid registration model

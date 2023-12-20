@@ -5,8 +5,8 @@ import torch.nn.functional as F
 
 from se3cnn.image.gated_block import GatedBlock
 
-from energi import spatial_mean as sm
-from energi.utils import pts_to_xfm_numerical, pts_to_xfm_analytical, create_transform
+from equitrack import spatial_mean as sm
+from equitrack.utils import pts_to_xfm_numerical, pts_to_xfm_analytical, create_transform
 
 
 class Archi(nn.Module):

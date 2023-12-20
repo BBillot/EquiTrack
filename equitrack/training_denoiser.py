@@ -4,10 +4,10 @@ import numpy as np
 import torch.utils.data
 from shutil import copy2
 
-from energi import networks
-from energi import loaders
-from energi.losses import image_loss
-from energi.utils import build_subject_dict, save_volume
+from equitrack import networks
+from equitrack import loaders
+from equitrack.losses import image_loss
+from equitrack.utils import build_subject_dict, save_volume
 
 # set up cuda and device
 torch.backends.cudnn.benchmark = True

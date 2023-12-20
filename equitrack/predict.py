@@ -3,10 +3,10 @@ import numpy as np
 import torch.utils.data
 from pytorch3d.transforms import matrix_to_euler_angles
 
-from energi import loaders
-from energi import networks
-import energi.losses as losses
-from energi.utils import build_subject_dict, build_xfm_dict, aff_to_field, interpolate, save_volume
+from equitrack import loaders
+from equitrack import networks
+import equitrack.losses as losses
+from equitrack.utils import build_subject_dict, build_xfm_dict, aff_to_field, interpolate, save_volume
 
 # set up cuda and device
 torch.backends.cudnn.benchmark = True

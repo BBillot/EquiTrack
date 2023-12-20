@@ -2,7 +2,7 @@
 the denoiser will be integrated to our framework in another script.
 """
 
-from energi.predict_denoiser import predict
+from equitrack.predict_denoiser import predict
 
 # inputs (Images need to be in nifty format.)
 path_model = '/data/results_denoiser/best_val_loss.pth'  # this is the path of the trained denoiser

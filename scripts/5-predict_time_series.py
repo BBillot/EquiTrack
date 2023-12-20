@@ -1,7 +1,7 @@
 """This script performs rigid motion tracking in time series of nifty images by registering all time frames to the very
 first one of the time series. This script has a strict requirement in terms of the structure of the provided data."""
 
-from energi.predict_time_series import predict
+from equitrack.predict_time_series import predict
 
 # inputs
 path_main_model = '/data/results_rigid_registration/best_val_loss.pth'  # path of the rigid registration model
@@ -30,8 +30,8 @@ name_image_dir = 'images'        # this needs to be the same name for all time s
 name_labels_dir = 'masks'        # if you don't have this replace with None
 name_xfm_dir = 'gt_transforms'   # if you don't have this replace with None
 
-# results will automatically be saved in main_data_dir/time_series_1/energi with the same structure as in 4-predict.py:
-# main_data_dir/time_series_1/energi/predicted_transforms/predicted_transforms_4x4_matrix/*.npy
+# results will automatically be saved in main_data_dir/time_series_1/equitrack with the same structure as in 4-predict.py:
+# main_data_dir/time_series_1/equitrack/predicted_transforms/predicted_transforms_4x4_matrix/*.npy
 #                                                        /predicted_rotation_angles.npy
 #                                                        /predicted_translation_shifts.npy
 #                   (optionally)    /test_scores.npy

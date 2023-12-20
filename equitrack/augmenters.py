@@ -6,7 +6,7 @@ import math
 import torch
 import numpy as np
 
-from energi.utils import apply_intensity_transform, create_transform, aff_to_field, interpolate
+from equitrack.utils import apply_intensity_transform, create_transform, aff_to_field, interpolate
 
 
 class SpatialAugmenter(object):

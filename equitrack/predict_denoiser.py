@@ -1,9 +1,9 @@
 import os
 import torch.utils.data
 
-from energi import loaders
-from energi import networks
-from energi.utils import build_subject_dict, save_volume
+from equitrack import loaders
+from equitrack import networks
+from equitrack.utils import build_subject_dict, save_volume
 
 # set up cuda and device
 torch.backends.cudnn.benchmark = True
