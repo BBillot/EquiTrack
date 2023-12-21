@@ -75,7 +75,7 @@ This code is under [Apache 2.0](LICENSE.txt) licensing.
 
 If you find it useful for your research, please cite:\
 *SE(3)-Equivariance for 3D Motion Tracking in Medical Images* \
-Billot, Moyer, Hoffmann, Abaci Turk, Gagoski, Grant, Golland \
+Billot, Moyer, Dey, Hoffmann, Abaci Turk, Gagoski, Grant, Golland \
 2023
 
 If you have any question regarding the usage of this code, or any suggestions to improve it, please raise an issue
