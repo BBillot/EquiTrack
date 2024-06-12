@@ -1,8 +1,8 @@
 # EquiTrack
 
 In this repository, we present EquiTrack, the first method to use recently proposed steerable SE(3)-equivariant 
-group-CNNs (G-CNN) for rigid motion tracking in 3D medical images. Here we use a hybrid architecture that 
-combines a denoising CNN with a G-CNN to decouple the processing of intensity and spatial features. 
+CNN (E-CNN) for rigid motion tracking in 3D medical images. Here we use a hybrid architecture that 
+combines a denoising CNN with an E-CNN to decouple the processing of intensity and spatial features. 
 
 Specifically, our framework has three parts (see figure below):
 
@@ -20,7 +20,6 @@ corresponding point clouds, which are registered in close form.
 ![Generation examples](data/figures/overview.png)
 
 <br />
-<br />
 
 Overall, EquiTrack outperforms classical optimisation-based ([ANTs](https://github.com/ANTsX/ANTs)<sup>1</sup>) and 
 learning-based strategies ([KeyMorph](https://github.com/alanqrwang/keymorph)<sup>2</sup>) for rigid motion tracking
@@ -31,6 +30,14 @@ learning-based strategies ([KeyMorph](https://github.com/alanqrwang/keymorph)<su
 ![Generation examples](data/figures/example.png)
 
 <br />
+
+The full article describing this method is available at:
+
+**SE(3)-Equivariant and Noise-Invariant 3D Rigid Motion Tracking in Brain MRI** \
+Billot, Dey, Moyer, Hoffmann, Abaci Turk, Gagoski, Grant, Golland \
+IEEE transactions on Medical Imaging (2024) \
+[ [article](https://ieeexplore.ieee.org/document/10552291) | [arxiv](https://arxiv.org/abs/2312.13534) | [bibtex](bibtex.bib) ]
+
 
 ---
 ### Installation
@@ -73,13 +80,16 @@ time-series. This is a modified version of script 4 to register all time frames 
 
 This code is under [Apache 2.0](LICENSE.txt) licensing.
 
-If you find it useful for your research, please cite:\
-*SE(3)-Equivariance for 3D Motion Tracking in Medical Images* \
-Billot, Moyer, Dey, Hoffmann, Abaci Turk, Gagoski, Grant, Golland \
-2023
+If you find this work useful for your research, please cite:
+
+**SE(3)-Equivariant and Noise-Invariant 3D Rigid Motion Tracking in Brain MRI** \
+Billot, Dey, Moyer, Hoffmann, Abaci Turk, Gagoski, Grant, Golland \
+IEEE transactions on Medical Imaging (2024) \
+[ [article](https://ieeexplore.ieee.org/document/10552291) | [arxiv](https://arxiv.org/abs/2312.13534) | [bibtex](bibtex.bib) ]
 
 If you have any question regarding the usage of this code, or any suggestions to improve it, please raise an issue
-(preferred) or contact us at: bbillot@mit.edu
+(preferred) or contact us at:\
+**bbillot@mit.edu**
 
 
 <br />
